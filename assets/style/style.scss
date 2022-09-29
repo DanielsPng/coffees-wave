@@ -1,3 +1,6 @@
+@import url('http://fonts.cdnfonts.com/css/louis-george-cafe');
+
+
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +9,9 @@
 
 body{
   background-color: #EFE3E5;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 header {
   height: 80px;
@@ -23,7 +29,8 @@ nav {
   width: 100%;
 
   .logo{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Louis George Café', sans-serif;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,4 +167,35 @@ to {
   opacity: 1;
   transform: translateX(0);
 }
+}
+
+main{
+  position: relative;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: calc(100vh - 80px);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 1rem;
+    overflow: hidden;
+  h1{
+    font-family: 'Louis George Café', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: #59020C;
+  }
+  p{
+    font-family: 'Louis George Café', sans-serif;
+    font-size: 20px;
+  }
+  .cup{
+    position: absolute;
+    display: flex;
+    max-width: 100%;
+    right: 0;
+
+    width: 50%;
+  }
 }
