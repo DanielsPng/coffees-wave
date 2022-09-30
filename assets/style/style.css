@@ -256,13 +256,13 @@ main .bg .wave:before, main .bg .wave:after {
           animation-timing-function: linear;
 }
 main .bg .wave:before {
-  bottom: 15vh;
+  bottom: 25vh;
   border-radius: 45%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
 }
 main .bg .wave:after {
-  bottom: 12vh;
+  bottom: 22vh;
   opacity: 0.5;
   border-radius: 47%;
   -webkit-animation-duration: 10s;
