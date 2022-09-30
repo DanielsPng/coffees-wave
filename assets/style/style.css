@@ -3,8 +3,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,14 +19,9 @@ header {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: transparent;
   gap: 30px;
@@ -35,94 +29,61 @@ nav {
   width: 100%;
   z-index: 3;
 }
-
 nav .logo {
   font-family: "Louis George Café", sans-serif;
   font-size: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-transition: all 0.4s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   transition: all 0.4s ease-in-out;
 }
-
 nav .logo img {
   max-width: 140px;
   padding: 10px;
   cursor: pointer;
 }
-
 @media (max-width: 900px) {
   nav .logo img {
     max-width: 110px;
   }
 }
-
-nav .nav-list > li {
-  display: -webkit-box;
-  display: -ms-flexbox;
+nav .nav-list > li:not(.logo, .cafe) {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
   height: 100%;
 }
-
-nav .nav-list > li:not(:last-child):hover {
-  -webkit-box-shadow: inset 0 -8px 5px 50px #ecd7da;
-          box-shadow: inset 0 -8px 5px 50px #ecd7da;
+nav .nav-list > li:not(.logo, .cafe):not(:last-child):hover {
+  box-shadow: inset 0 -8px 5px 50px #ecd7da;
 }
-
 nav a {
   text-decoration: none;
   color: #59020c;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   padding: 10px 20px;
-  -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
 }
-
 nav .cafe {
   background-color: #bd9ba0;
   color: #59020c;
   border-radius: 5px;
 }
-
 nav .cafe:hover {
   background-color: #80121f;
   color: white;
 }
-
 nav .nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   height: 100%;
 }
-
 nav .nav-list.active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   z-index: 1;
   top: 0;
 }
@@ -132,41 +93,28 @@ nav .nav-list.active {
   cursor: pointer;
   z-index: 2;
 }
-
 .mobile-menu > div {
   width: 32px;
   height: 2px;
   background: #bd9ba0;
   margin: 8px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 .mobile-menu.active .line1 {
-  -webkit-transform: rotate(-45deg) translate(-8px, 8px);
-          transform: rotate(-45deg) translate(-8px, 8px);
+  transform: rotate(-45deg) translate(-8px, 8px);
 }
-
 .mobile-menu.active .line2 {
   opacity: 0;
 }
-
 .mobile-menu.active .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -7px);
-          transform: rotate(45deg) translate(-5px, -7px);
+  transform: rotate(45deg) translate(-5px, -7px);
 }
 
 @media (max-width: 900px) {
   .nav-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0;
     right: 0;
@@ -175,23 +123,15 @@ nav .nav-list.active {
     background: rgba(54, 54, 54, 0.2);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(5px);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     align-items: center;
     gap: 15%;
     justify-content: center;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    -webkit-transition: -webkit-transform 0.3s ease-in;
-    transition: -webkit-transform 0.3s ease-in;
+    transform: translateY(-100%);
     transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
   .nav-list > li {
     margin-left: none;
@@ -200,69 +140,47 @@ nav .nav-list.active {
     display: block;
   }
 }
-
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
-
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    transform: translateX(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
-
 main {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
   height: calc(100vh - 80px);
   width: 100%;
   margin: 0px auto;
 }
-
 main .about {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 1rem;
   width: 100%;
   max-width: 45%;
   z-index: 2;
-  top: 130px;
+  top: 110px;
   margin-left: 150px;
 }
-
 main .about h1 {
   font-family: "Louis George Café", sans-serif;
   font-size: 90px;
@@ -270,41 +188,37 @@ main .about h1 {
   color: #59020c;
   line-height: 85%;
 }
-
 main .about h1 span {
   font-weight: 100;
-  color: #bd9ba0;
+  color: #a18085;
 }
-
+main .about h1 .tb {
+  font-size: 50px;
+  color: #80121f;
+}
 main .about p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 15px;
-  width: 60vh;
+  width: 70vh;
   color: rgba(0, 0, 0, 0.653);
   margin-bottom: 15px;
 }
-
 main .about a {
   text-decoration: none;
   color: white;
   background-color: #59020c;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 17px;
   padding: 10px 20px;
-  -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
   border-radius: 5px;
 }
-
 main .about a:hover {
   background-color: #80121f;
 }
-
 @media (max-width: 900px) {
   main .about {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     max-width: 100%;
     margin-left: 0;
   }
@@ -318,34 +232,24 @@ main .about a:hover {
     font-size: 15px;
   }
 }
-
 main .bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   width: 100%;
   height: 100vh;
   position: absolute;
   z-index: -1;
 }
-
 main .bg .circle {
   position: absolute;
   border-radius: 50%;
 }
-
 main .bg .circle svg {
   width: 100%;
   height: 100%;
 }
-
 @media (min-width: 900px) {
   main .bg .circle {
     width: 300vh;
@@ -353,37 +257,32 @@ main .bg .circle svg {
     bottom: 0;
     top: 0;
     right: 0;
-    -webkit-transform: translate(45%, 10%);
-            transform: translate(45%, 10%);
+    transform: translate(45%, 10%);
   }
 }
-
 @media (max-width: 900px) {
   main .bg .circle {
     width: 150vw;
     height: 110vh;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     top: -20vh;
-    left: calc(-50vw / 2);
+    left: -25vw;
     background-color: #dfc2c5;
   }
   main .bg .circle > svg {
     display: none;
   }
 }
-
 @media (max-width: 500px) {
   main .bg .circle {
     width: 150vw;
     height: 110vh;
     top: -50vh;
-    left: calc(-50vw / 2);
+    left: -25vw;
     border-radius: 100vw;
     background-color: #dfc2c5;
   }
 }
-
 main .bg .cup {
   width: 100%;
   max-width: 500px;
@@ -397,24 +296,20 @@ main .bg .cup {
   height: 100%;
   width: 100%;
   pointer-events: none;
-  -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.274));
-          filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.274));
+  filter: drop-shadow(40px 30px 20px rgba(0, 0, 0, 0.329));
 }
-
 @media (max-width: 900px) {
   main .bg .cup {
     display: none;
   }
 }
-
 @media (min-width: 900px) {
   main .bg {
     max-width: 45vw;
     right: 0;
-    bottom: 0;
+    bottom: -20px;
   }
 }
-
 @media (max-width: 900px) {
   main .bg {
     top: 0;
@@ -423,5 +318,4 @@ main .bg .cup {
     margin-top: -80px;
     padding: 80px 0;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

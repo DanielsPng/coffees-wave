@@ -197,7 +197,7 @@ main {
     width: 100%;
     max-width: 45%;
     z-index: 2;
-    top: 130px;
+    top: 110px;
     margin-left: 150px;
 
     h1 {
@@ -209,7 +209,12 @@ main {
 
       span {
         font-weight: 100;
-        color: #bd9ba0;
+        color: #a18085;
+      }
+
+      .tb{
+        font-size: 50px;
+        color: #80121f;
       }
     }
     p {
@@ -217,7 +222,7 @@ main {
         Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
         sans-serif;
       font-size: 15px;
-      width: 60vh;
+      width: 70vh;
       color: rgba(0, 0, 0, 0.653);
       margin-bottom: 15px;
     }
@@ -332,7 +337,7 @@ main {
 
       pointer-events: none;
 
-      filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.274));
+      filter: drop-shadow(40px 30px 20px rgba(0, 0, 0, 0.329));
       @media (max-width: 900px) {
         display: none;
       }
@@ -342,7 +347,7 @@ main {
       max-width: 45vw;
 
       right: 0;
-      bottom: 0;
+      bottom: -20px;
     }
 
     @media (max-width: 900px) {
