@@ -242,9 +242,11 @@ main .about a:hover {
   }
   main .about h1 {
     text-align: center;
+    font-size: 70px;
   }
   main .about p {
     display: none;
+    font-size: 50px;
   }
   main .about a {
     font-size: 15px;
