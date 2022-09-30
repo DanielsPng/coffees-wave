@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("http://fonts.cdnfonts.com/css/louis-george-cafe");
 * {
   padding: 0;
   margin: 0;
@@ -179,14 +178,14 @@ main .about {
   max-width: 45%;
   z-index: 2;
   top: 110px;
-  margin-left: 150px;
+  margin-left: 8%;
 }
 main .about h1 {
-  font-family: "Louis George Café", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 90px;
   font-weight: 900;
   color: #59020c;
-  line-height: 85%;
+  line-height: 75%;
 }
 main .about h1 span {
   font-weight: 100;
@@ -207,7 +206,7 @@ main .about a {
   text-decoration: none;
   color: white;
   background-color: #59020c;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 17px;
   padding: 10px 20px;
   transition: 0.2s ease-out;
@@ -242,6 +241,38 @@ main .bg {
   position: absolute;
   z-index: -1;
 }
+main .bg .wave:before, main .bg .wave:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  min-width: 250vw;
+  min-height: 250vw;
+  background-color: #dfc2c5;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+main .bg .wave:before {
+  bottom: 15vh;
+  border-radius: 45%;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+main .bg .wave:after {
+  bottom: 12vh;
+  opacity: 0.5;
+  border-radius: 47%;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+@media (min-width: 900px) {
+  main .bg .wave {
+    display: none;
+  }
+}
 main .bg .circle {
   position: absolute;
   border-radius: 50%;
@@ -262,25 +293,10 @@ main .bg .circle svg {
 }
 @media (max-width: 900px) {
   main .bg .circle {
-    width: 150vw;
-    height: 110vh;
-    box-shadow: none;
-    top: -20vh;
-    left: -25vw;
-    background-color: #dfc2c5;
+    display: none;
   }
   main .bg .circle > svg {
     display: none;
-  }
-}
-@media (max-width: 500px) {
-  main .bg .circle {
-    width: 150vw;
-    height: 110vh;
-    top: -50vh;
-    left: -25vw;
-    border-radius: 100vw;
-    background-color: #dfc2c5;
   }
 }
 main .bg .cup {
@@ -317,5 +333,29 @@ main .bg .cup {
     overflow: hidden;
     margin-top: -80px;
     padding: 80px 0;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: translate(-50%, 0) rotateZ(0deg);
+  }
+  50% {
+    transform: translate(-50%, -2%) rotateZ(180deg);
+  }
+  100% {
+    transform: translate(-50%, 0%) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, 0) rotateZ(0deg);
+  }
+  50% {
+    transform: translate(-50%, -2%) rotateZ(180deg);
+  }
+  100% {
+    transform: translate(-50%, 0%) rotateZ(360deg);
   }
 }/*# sourceMappingURL=style.css.map */
