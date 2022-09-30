@@ -57,6 +57,17 @@ nav .nav-list > li:not(.logo, .cafe) {
 nav .nav-list > li:not(.logo, .cafe):not(:last-child):hover {
   box-shadow: inset 0 -8px 5px 50px #ecd7da;
 }
+@media (max-width: 900px) {
+  nav .nav-list > li:not(.logo, .cafe):not(:last-child):hover:hover {
+    box-shadow: none;
+  }
+}
+@media (max-width: 900px) {
+  nav .nav-list > li:not(.logo, .cafe) {
+    margin-left: 0;
+    height: 80%;
+  }
+}
 nav a {
   text-decoration: none;
   color: #59020c;
@@ -64,6 +75,15 @@ nav a {
   font-size: 18px;
   padding: 10px 20px;
   transition: 0.2s ease-out;
+}
+@media (max-width: 900px) {
+  nav a {
+    color: black;
+    padding: none;
+  }
+  nav a:hover {
+    background-color: transparent;
+  }
 }
 nav .cafe {
   background-color: #bd9ba0;
@@ -95,7 +115,7 @@ nav .nav-list.active {
 .mobile-menu > div {
   width: 32px;
   height: 2px;
-  background: #bd9ba0;
+  background: #7a5f63;
   margin: 8px;
   transition: 0.3s;
 }
@@ -127,7 +147,6 @@ nav .nav-list.active {
     -webkit-backdrop-filter: blur(5px);
     flex-direction: column;
     align-items: center;
-    gap: 15%;
     justify-content: center;
     transform: translateY(-100%);
     transition: transform 0.3s ease-in;
@@ -176,7 +195,7 @@ main .about {
   gap: 1rem;
   width: 100%;
   max-width: 45%;
-  z-index: 2;
+  z-index: 0;
   top: 110px;
   margin-left: 8%;
 }

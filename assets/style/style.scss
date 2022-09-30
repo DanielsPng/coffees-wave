@@ -61,6 +61,15 @@ nav {
 
       &:not(:last-child):hover {
         box-shadow: inset 0 -8px 5px 50px #ecd7da;
+        @media (max-width: 900px) {
+          &:hover{
+            box-shadow: none;
+          }
+        }
+      }
+      @media (max-width: 900px) {
+        margin-left: 0;
+        height: 80%;
       }
     }
   }
@@ -75,6 +84,13 @@ nav {
     padding: 10px 20px;
 
     transition: 0.2s ease-out;
+    @media (max-width: 900px) {
+      color: black;
+      padding: none;
+      &:hover{
+        background-color: transparent;
+      }
+    }
   }
 
   .cafe {
@@ -86,6 +102,8 @@ nav {
       color: white;
     }
   }
+
+ 
 
   .nav-list {
     display: flex;
@@ -111,7 +129,7 @@ nav {
   > div {
     width: 32px;
     height: 2px;
-    background: #bd9ba0;
+    background: #7a5f63;
     margin: 8px;
     transition: 0.3s;
   }
@@ -150,10 +168,10 @@ nav {
     -webkit-backdrop-filter: blur(5px);
     flex-direction: column;
     align-items: center;
-    gap: 15%;
     justify-content: center;
     transform: translateY(-100%);
     transition: transform 0.3s ease-in;
+
 
     > li {
       margin-left: none;
@@ -195,7 +213,7 @@ main {
     gap: 1rem;
     width: 100%;
     max-width: 45%;
-    z-index: 2;
+    z-index: 0;
     top: 110px;
     margin-left: 8%;
 
