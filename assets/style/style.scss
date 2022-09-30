@@ -1,5 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/louis-george-cafe');
-
+@import url("http://fonts.cdnfonts.com/css/louis-george-cafe");
 
 * {
   padding: 0;
@@ -7,8 +6,8 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: #EFE3E5;
+body {
+  background-color: #efe3e5;
   height: 100vh;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -23,84 +22,80 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: transparent; 
+  background: transparent;
   gap: 30px;
 
-  height: 100%;    
+  height: 100%;
   width: 100%;
   z-index: 3;
 
-  .logo{
-    font-family: 'Louis George Café', sans-serif;
+  .logo {
+    font-family: "Louis George Café", sans-serif;
     font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
-    transition: all .4s ease-in-out;
-    
-    img{
+    transition: all 0.4s ease-in-out;
+
+    img {
       max-width: 140px;
       padding: 10px;
       cursor: pointer;
     }
 
     @media (max-width: 900px) {
-      img{
+      img {
         max-width: 110px;
       }
-
     }
-
   }
 
   .nav-list {
     > li:not(.logo, .cafe) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-        margin-left: 10px;
-        height: 100%;
+      margin-left: 10px;
+      height: 100%;
 
-        &:not(:last-child):hover {
-          box-shadow: inset 0 -8px 5px 50px #ecd7da;
-        }
-      
+      &:not(:last-child):hover {
+        box-shadow: inset 0 -8px 5px 50px #ecd7da;
+      }
     }
   }
-
 
   a {
     text-decoration: none;
-    color: #59020C;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #59020c;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 18px;
     padding: 10px 20px;
-   
-    transition: .2s ease-out;
+
+    transition: 0.2s ease-out;
   }
 
-  
-  .cafe{
+  .cafe {
     background-color: #bd9ba0;
-    color: #59020C ;
-         border-radius: 5px;
-    &:hover{
+    color: #59020c;
+    border-radius: 5px;
+    &:hover {
       background-color: #80121f;
       color: white;
- 
     }
   }
-  
+
   .nav-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     list-style: none;
     height: 100%;
-    
+
     &.active {
       transform: translateY(0);
       z-index: 1;
@@ -148,7 +143,7 @@ nav {
     right: 0;
     width: 100vw;
     height: 100vh;
-    background:rgba(54, 54, 54, 0.2);
+    background: rgba(54, 54, 54, 0.2);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -162,188 +157,194 @@ nav {
     transition: transform 0.3s ease-in;
 
     > li {
-        margin-left: none;
+      margin-left: none;
     }
   }
   .mobile-menu {
-      display: block;
+    display: block;
   }
 }
 
-
 @keyframes navLinkFade {
-from {
-  opacity: 0;
-  transform: translateX(50px);
-}
-to {
-  opacity: 1;
-  transform: translateX(0);
-}
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-main{
+main {
   position: relative;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  height: calc(100vh - 80px);
+  width: 100%;
+
+  margin: 0px auto;
+  //overflow: hidden;
+
+  .about {
+    position: absolute;
     display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    height: calc(100vh - 80px);
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
     width: 100%;
+    max-width: 45%;
+    z-index: 2;
+    top: 130px;
+    margin-left: 150px;
 
-    margin: 0px auto;
-    //overflow: hidden;
+    h1 {
+      font-family: "Louis George Café", sans-serif;
+      font-size: 90px;
+      font-weight: 900;
+      color: #59020c;
+      line-height: 85%;
 
-    .about{
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      -webkit-box-pack: center;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 1rem;
-      width: 100%;
-      max-width: 45%;
-      z-index: 2;
-      top: 130px;
-      margin-left: 150px;
-
-      h1{
-        font-family: 'Louis George Café', sans-serif;
-        font-size: 90px;
-        font-weight: 900;
-        color: #59020C;
-        line-height: 85%;
-
-        span{
-          font-weight: 100;
-          color: #bd9ba0;
-        }
+      span {
+        font-weight: 100;
+        color: #bd9ba0;
       }
-      p{
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 15px;
-        width: 60vh;
-        color: rgba(0, 0, 0, 0.653);
-        margin-bottom: 15px;
-      }
-      a{
-        text-decoration: none;
-        color: white;
-        background-color: #59020C;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 17px;
-        padding: 10px 20px;
-        transition: .2s ease-out;
-        border-radius: 5px;
+    }
+    p {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-size: 15px;
+      width: 60vh;
+      color: rgba(0, 0, 0, 0.653);
+      margin-bottom: 15px;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: #59020c;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-size: 17px;
+      padding: 10px 20px;
+      transition: 0.2s ease-out;
+      border-radius: 5px;
 
-        &:hover{
-          background-color: #80121f;
-     
-        }
-      }
-
-      @media (max-width: 900px){
-        align-items: center;
-        max-width: 100%;
-        margin-left: 0;
-        h1{
-          text-align: center;
-        }
-        p{
-          display: none;
-        }
-        a{
-          font-size: 15px;
-        }
+      &:hover {
+        background-color: #80121f;
       }
     }
 
-
-    .bg{
-      display: flex;
-      justify-content: center;
+    @media (max-width: 900px) {
       align-items: center;
+      max-width: 100%;
+      margin-left: 0;
+      h1 {
+        text-align: center;
+      }
+      p {
+        display: none;
+      }
+      a {
+        font-size: 15px;
+      }
+    }
+  }
 
-      width: 100%;
-      height: 100vh;
+  .bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+
+    z-index: -1;
+
+    .circle {
       position: absolute;
 
-      z-index: -1;
-
-      .circle{
-        position: absolute;
-        
-        border-radius: 50%;
-        background-color: #59020C;
-        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.411);
-        @media (min-width: 900px) {
-          width: 80vh;
-          height: 80vh;
-
-          bottom: 0;
-          top: 0;
-          right: 0;
-          transform: translate(50%, 15%);
-        }
-
-        @media (max-width: 900px) {
-          width: 125vw;
-          height: 110vh;
-          box-shadow: none;
-          top: -50vh;
-          left: calc(-25vw / 2);
-
-          background-color: #dfc2c5;
-        }
-
-        @media (max-width: 500px) {
-          width: 125vw;
-          height: 110vh;
-
-          top: -50vh;
-          left: calc(-25vw / 2);
-
-          border-radius: 100vw;
-          background-color: #dfc2c5;
-        }
-      }
-
-      .cup {
+      border-radius: 50%;
+      //background-color: #59020c;
+      // box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.411);
+      svg {
         width: 100%;
-        max-width: 500px;
-        height: 100vh;
-        max-height: 45vw;
-
-        object-fit: cover;
-        z-index: 1;
-
-        position: absolute;
-        // bottom: 0;
-        right: 0;
         height: 100%;
-        width: 100%;
-
-        pointer-events: none;
-
-        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.274));
-        @media (max-width: 900px) {
-          display: none;
-
-        }
       }
-
       @media (min-width: 900px) {
-        max-width: 45vw;
+        width: 300vh;
+        height: 95vh;
 
-        right: 0;
         bottom: 0;
+        top: 0;
+        right: 0;
+        transform: translate(45%, 10%);
       }
 
       @media (max-width: 900px) {
-        top: 0;
-        left: 0;
-  
+        width: 125vw;
+        height: 110vh;
+        box-shadow: none;
+        top: -50vh;
+        left: calc(-25vw / 2);
+
+        background-color: #dfc2c5;
+
+        > svg {
+          display: none;
+        }
+      }
+
+      @media (max-width: 500px) {
+        width: 125vw;
+        height: 110vh;
+
+        top: -50vh;
+        left: calc(-25vw / 2);
+
+        border-radius: 100vw;
+        background-color: #dfc2c5;
       }
     }
-  
+
+    .cup {
+      width: 100%;
+      max-width: 500px;
+      height: 100vh;
+      max-height: 45vw;
+
+      object-fit: cover;
+      z-index: 1;
+
+      position: absolute;
+      // bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+
+      pointer-events: none;
+
+      filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.274));
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    @media (min-width: 900px) {
+      max-width: 45vw;
+
+      right: 0;
+      bottom: 0;
+    }
+
+    @media (max-width: 900px) {
+      top: 0;
+      left: 0;
+    }
+  }
 }

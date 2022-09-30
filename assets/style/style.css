@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #EFE3E5;
+  background-color: #efe3e5;
   height: 100vh;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -37,7 +37,7 @@ nav {
 }
 
 nav .logo {
-  font-family: 'Louis George Café', sans-serif;
+  font-family: "Louis George Café", sans-serif;
   font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,8 +50,8 @@ nav .logo {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 nav .logo img {
@@ -87,17 +87,17 @@ nav .nav-list > li:not(:last-child):hover {
 
 nav a {
   text-decoration: none;
-  color: #59020C;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #59020c;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   padding: 10px 20px;
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 nav .cafe {
   background-color: #bd9ba0;
-  color: #59020C;
+  color: #59020c;
   border-radius: 5px;
 }
 
@@ -264,10 +264,10 @@ main .about {
 }
 
 main .about h1 {
-  font-family: 'Louis George Café', sans-serif;
+  font-family: "Louis George Café", sans-serif;
   font-size: 90px;
   font-weight: 900;
-  color: #59020C;
+  color: #59020c;
   line-height: 85%;
 }
 
@@ -277,7 +277,7 @@ main .about h1 span {
 }
 
 main .about p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 15px;
   width: 60vh;
   color: rgba(0, 0, 0, 0.653);
@@ -287,12 +287,12 @@ main .about p {
 main .about a {
   text-decoration: none;
   color: white;
-  background-color: #59020C;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #59020c;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 17px;
   padding: 10px 20px;
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
   border-radius: 5px;
 }
 
@@ -338,20 +338,22 @@ main .bg {
 main .bg .circle {
   position: absolute;
   border-radius: 50%;
-  background-color: #59020C;
-  -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.411);
-          box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.411);
+}
+
+main .bg .circle svg {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 900px) {
   main .bg .circle {
-    width: 80vh;
-    height: 80vh;
+    width: 300vh;
+    height: 95vh;
     bottom: 0;
     top: 0;
     right: 0;
-    -webkit-transform: translate(50%, 15%);
-            transform: translate(50%, 15%);
+    -webkit-transform: translate(45%, 10%);
+            transform: translate(45%, 10%);
   }
 }
 
@@ -364,6 +366,9 @@ main .bg .circle {
     top: -50vh;
     left: calc(-25vw / 2);
     background-color: #dfc2c5;
+  }
+  main .bg .circle > svg {
+    display: none;
   }
 }
 
