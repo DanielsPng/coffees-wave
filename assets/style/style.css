@@ -161,21 +161,21 @@ nav .nav-list.active {
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translatey(-10px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translatey(0);
   }
 }
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translatey(-10px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translatey(0);
   }
 }
 main {
