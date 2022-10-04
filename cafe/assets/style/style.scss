@@ -1,0 +1,198 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efe3e5;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+header {
+  height: 80px;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: transparent;
+  gap: 30px;
+
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+
+  .logo {
+    font-family: "Louis George Café", sans-serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    transition: all 0.4s ease-in-out;
+
+    img {
+      max-width: 140px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 900px) {
+      img {
+        max-width: 110px;
+      }
+    }
+  }
+
+  .nav-list {
+    > li:not(.logo, .cafe) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-left: 10px;
+      height: 100%;
+
+      &:not(:last-child):hover {
+        box-shadow: inset 0 -8px 5px 50px #ecd7da;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        @media (max-width: 900px) {
+          &:hover{
+            box-shadow: none;
+
+          }
+        }
+      }
+      @media (max-width: 900px) {
+        margin-left: 0;
+        height: 80%;
+        
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #59020c;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+
+    transition: 0.2s ease-out;
+    @media (max-width: 900px) {
+      color: black;
+      padding: none;
+      &:hover{
+        background-color: transparent;
+      }
+    }
+  }
+
+  .cafe {
+    background-color: #bd9ba0;
+    color: #59020c;
+    border-radius: 5px;
+    &:hover {
+      background-color: #80121f;
+      color: white;
+    }
+  }
+
+ 
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    height: 100%;
+
+    &.active {
+      transform: translateY(0);
+      z-index: 1;
+      top: 0;
+    }
+  }
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  z-index: 2;
+
+  > div {
+    width: 32px;
+    height: 2px;
+    background: #7a5f63;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+  &.active {
+    .line1 {
+      transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .line2 {
+      opacity: 0;
+    }
+
+    .line3 {
+      transform: rotate(45deg) translate(-5px, -7px);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(54, 54, 54, 0.2);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(5px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in;
+
+
+    > li {
+      margin-left: none;
+    }
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translatey(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
