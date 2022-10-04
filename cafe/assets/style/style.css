@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #efe3e5;
+  background-color: #000;
   height: 100vh;
   overflow-x: hidden;
 }
@@ -83,13 +83,13 @@ nav a {
   }
 }
 nav .cafe {
-  background-color: #bd9ba0;
-  color: #59020c;
+  background-color: #80121f;
+  color: white;
   border-radius: 5px;
 }
 nav .cafe:hover {
-  background-color: #80121f;
-  color: white;
+  background-color: #bd9ba0;
+  color: #59020c;
 }
 nav .nav-list {
   display: flex;
@@ -190,8 +190,8 @@ main .bg {
   -o-object-fit: cover;
      object-fit: cover;
   filter: brightness(35%);
-  -webkit-mask-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.534) 95%);
-          mask-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.534) 95%);
+  -webkit-mask-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.192) 95%);
+          mask-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.192) 95%);
   z-index: -1;
   pointer-events: none;
   -webkit-user-select: none;
