@@ -199,29 +199,35 @@ main .bg {
       -ms-user-select: none;
           user-select: none;
 }
-main .about {
+main .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 100%;
-  height: 70%;
+  height: 100%;
   color: white;
   z-index: 2;
   padding: 0px 1rem 80px;
   text-align: center;
+  top: -50px;
 }
-main .about h1 {
+main .intro .about h1 {
   filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.486));
   font-size: 4rem;
   line-height: 90%;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
-main .about p {
+main .intro .about p {
   color: rgba(255, 255, 255, 0.568);
   font-family: Arial, Helvetica, sans-serif;
   filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.486));
   font-size: 2rem;
+}
+main .intro img {
+  position: absolute;
+  margin-top: 90vh;
+  filter: opacity(40%);
 }/*# sourceMappingURL=style.css.map */
