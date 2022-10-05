@@ -112,7 +112,7 @@ nav .nav-list.active {
 .mobile-menu > div {
   width: 32px;
   height: 2px;
-  background: #7a5f63;
+  background: white;
   margin: 8px;
   transition: 0.3s;
 }
@@ -213,9 +213,15 @@ main .about {
   text-align: center;
 }
 main .about h1 {
-  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.486));
-  font-size: 5rem;
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.486));
+  font-size: 4rem;
   line-height: 90%;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+main .about p {
+  color: rgba(255, 255, 255, 0.568);
+  font-family: Arial, Helvetica, sans-serif;
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.486));
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
