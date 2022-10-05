@@ -38,6 +38,7 @@ nav .logo {
 }
 nav .logo img {
   max-width: 140px;
+  padding: 10px;
   cursor: pointer;
 }
 @media (max-width: 900px) {
