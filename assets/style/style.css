@@ -335,7 +335,6 @@ main .bg .cup {
   height: 100%;
   width: 100%;
   pointer-events: none;
-  filter: drop-shadow(40px 30px 20px rgba(0, 0, 0, 0.329));
 }
 @media (max-width: 900px) {
   main .bg .cup {
