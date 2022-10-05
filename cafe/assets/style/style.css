@@ -241,6 +241,7 @@ main .intro .about p {
   }
   main .intro .about h1 {
     width: 100%;
+    font-size: 4rem;
   }
 }
 main .intro img {
