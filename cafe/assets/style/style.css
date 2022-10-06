@@ -176,7 +176,7 @@ nav .nav-list.active {
   }
 }
 main {
-  height: 200vh;
+  height: 400vh;
   width: 100%;
   margin: 0px auto;
   overflow: hidden;
@@ -312,6 +312,7 @@ main .menu h1 {
   justify-content: center;
   display: flex;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 main .menu .cards {
   display: flex;
@@ -319,7 +320,7 @@ main .menu .cards {
   align-items: center;
   justify-content: center;
   align-items: flex-start;
-  height: 30vh;
+  height: 40vh;
 }
 main .menu .cards .item {
   flex-grow: 1;
@@ -330,13 +331,29 @@ main .menu .cards .item {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  height: 100%;
   max-height: 700px;
-  background: white;
+  background: rgba(255, 215, 215, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
   border-radius: 4px;
 }
-main .menu .cards p {
-  color: #ffffff;
+main .menu .cards .item img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+main .menu .cards .item p {
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 900px) {
+  main .menu .cards {
+    margin: 20px;
+  }
 }
 main .menu aside {
   float: left;
@@ -356,6 +373,11 @@ main .menu aside {
 main .menu aside p {
   color: #ffffff;
 }
+@media (max-width: 900px) {
+  main .menu aside {
+    display: none;
+  }
+}
 main .menu h1 {
   font-size: 100px;
   color: #ffffff;
@@ -374,4 +396,9 @@ main .menu section {
   position: sticky;
   top: 32px;
   color: #ffffff;
+}
+@media (max-width: 900px) {
+  main .menu section {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
