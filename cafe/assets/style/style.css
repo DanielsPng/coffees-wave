@@ -330,7 +330,7 @@ main .menu .cards .item {
   text-align: center;
   width: 100%;
   background: rgba(150, 150, 150, 0.1019607843);
-  border-radius: 1rem;
+  border-radius: 4px;
   padding: 1rem;
   gap: 2rem;
   transition: all 0.25s ease 0s;
@@ -365,6 +365,7 @@ main .menu .cards .item p {
   padding: 10px;
   color: rgb(255, 255, 255);
   font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 @media (max-width: 900px) {
   main .menu .cards {
