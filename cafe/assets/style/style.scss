@@ -372,7 +372,7 @@ overflow: hidden;
         align-items: center;
         text-align: center;
         width: 100%;
-        background: #9696961a;
+        background: #9696964d;
         border-radius: 4px;
         padding: 1rem;
         gap: 2rem;
@@ -402,12 +402,16 @@ overflow: hidden;
           pointer-events: none;
           user-select: none;
 
+          @media (max-width: 900px){
+            margin-top: -3rem;
+          }
+
         }
         p{
           padding: 10px;
           color: rgb(255, 255, 255);
-          font-size: 2rem;
-          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
         }
       }
