@@ -336,6 +336,15 @@ main .menu .cards .item {
   transition: all 0.25s ease 0s;
   cursor: pointer;
 }
+main .menu .cards .item:hover {
+  background: #59020c;
+}
+main .menu .cards .item:hover img {
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  max-height: 300px;
+}
 @media (min-width: 900px) {
   main .menu .cards .item {
     margin: 5rem 7rem 0px 7rem;
@@ -360,6 +369,7 @@ main .menu .cards .item img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  filter: drop-shadow(20px 5px 10px rgba(0, 0, 0, 0.431372549));
 }
 @media (max-width: 900px) {
   main .menu .cards .item img {
@@ -390,6 +400,7 @@ main .menu aside {
   position: -webkit-sticky;
   position: sticky;
   top: 32px;
+  background-color: rgba(255, 255, 255, 0.0705882353);
   color: #ffffff;
 }
 main .menu aside a {
