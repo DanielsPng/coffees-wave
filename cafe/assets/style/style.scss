@@ -372,7 +372,7 @@ overflow: hidden;
         align-items: center;
         text-align: center;
         width: 100%;
-        background: #9696964d;
+        border: 0.15rem solid #ffffff2f;
         border-radius: 4px;
         padding: 1rem;
         gap: 2rem;
@@ -381,7 +381,8 @@ overflow: hidden;
         cursor: pointer;
 
         &:hover{
-          background: #59020c;
+          background: #ffffff2f;
+          border: 0;
 
           img{
             width: 100%;
@@ -450,7 +451,7 @@ overflow: hidden;
       position: -webkit-sticky;
       position: sticky;
       top: 32px;
-      background-color: #ffffff12;
+      border: 1px dashed rgba(255, 255, 255, 0.26);
   
       color: #ffffff;
 
