@@ -373,11 +373,11 @@ main .menu .cards .item p {
 }
 main .menu aside {
   float: left;
-  margin: 82px 50px;
+  margin: 82px 0px;
   border-radius: 4px;
   height: 100%;
   max-height: 200px;
-  padding: 8px;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -386,8 +386,15 @@ main .menu aside {
   top: 32px;
   color: #ffffff;
 }
+main .menu aside a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
 main .menu aside p {
   color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 @media (max-width: 900px) {
   main .menu aside {
@@ -400,11 +407,11 @@ main .menu h1 {
 }
 main .menu section {
   float: right;
-  margin: 82px 50px;
+  margin: 82px 0px;
   border-radius: 4px;
   height: 100%;
   max-height: 200px;
-  padding: 8px;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
