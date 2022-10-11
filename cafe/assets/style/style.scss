@@ -269,6 +269,21 @@ main{
     }
   }
 
+  .circles{
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 110vh;
+    object-fit: cover;
+    // filter: invert(70%);
+    opacity: calc(50%);
+    filter: brightness(70%);
+    mask-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 95%);
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+  }
+
   .bg{
     position: absolute;
     top: 0px;
