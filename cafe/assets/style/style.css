@@ -88,8 +88,8 @@ nav .cafe {
   border-radius: 5px;
 }
 nav .cafe:hover {
-  background-color: #bd9ba0;
-  color: #59020c;
+  background: linear-gradient(90deg, hsl(232deg, 73%, 65%) 0%, hsl(279deg, 33%, 48%) 100%);
+  color: white;
 }
 nav .nav-list {
   display: flex;
