@@ -198,10 +198,10 @@ nav {
 }
 
 main{
-height: 400vh;
-width: 100%;
-margin: 0px auto;
-overflow: hidden;
+  height: 400vh;
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
 
   
   .circle{
@@ -292,7 +292,7 @@ overflow: hidden;
     width: 100%;
     height: 100vh;
     color: white;
-    z-index: 2;
+    z-index: 0;
     padding: 0px 1rem 80px;
     text-align: center;
     top: -50px;
