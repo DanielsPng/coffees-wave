@@ -348,7 +348,7 @@ main .menu .cards .item:hover img {
 }
 @media (min-width: 900px) {
   main .menu .cards .item {
-    margin: 5rem 7rem 0px 7rem;
+    margin: 5rem 44px 0px 44px;
   }
 }
 @media (max-width: 900px) {
@@ -390,7 +390,7 @@ main .menu .cards .item p {
 }
 main .menu aside {
   float: left;
-  margin: 82px 0px;
+  margin: 82px 44px;
   border-radius: 4px;
   height: 100%;
   max-height: 200px;
@@ -425,7 +425,7 @@ main .menu h1 {
 }
 main .menu section {
   float: right;
-  margin: 82px 0px;
+  margin: 82px 44px;
   border-radius: 4px;
   height: 100%;
   max-height: 200px;
