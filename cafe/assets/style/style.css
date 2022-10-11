@@ -75,7 +75,7 @@ nav a {
 }
 @media (max-width: 900px) {
   nav a {
-    color: black;
+    color: white;
     padding: none;
   }
   nav a:hover {
