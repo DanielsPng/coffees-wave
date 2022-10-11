@@ -329,7 +329,7 @@ main .menu .cards .item {
   align-items: center;
   text-align: center;
   width: 100%;
-  border: 0.15rem solid rgba(255, 255, 255, 0.1843137255);
+  background: rgba(255, 255, 255, 0.0549019608);
   border-radius: 4px;
   padding: 1rem;
   gap: 2rem;
@@ -337,7 +337,7 @@ main .menu .cards .item {
   cursor: pointer;
 }
 main .menu .cards .item:hover {
-  background: rgba(255, 255, 255, 0.1843137255);
+  background: linear-gradient(90deg, hsl(232deg, 73%, 65%) 0%, hsl(279deg, 33%, 48%) 100%);
   border: 0;
 }
 main .menu .cards .item:hover img {
@@ -345,6 +345,7 @@ main .menu .cards .item:hover img {
   max-width: 450px;
   height: 100%;
   max-height: 300px;
+  transform: rotate(-10deg);
 }
 @media (min-width: 900px) {
   main .menu .cards .item {
@@ -404,6 +405,9 @@ main .menu aside {
   border: 1px dashed rgba(255, 255, 255, 0.26);
   color: #ffffff;
 }
+main .menu aside li {
+  margin-top: 10px;
+}
 main .menu aside a {
   text-decoration: none;
   color: white;
@@ -411,6 +415,7 @@ main .menu aside a {
   margin-top: 10px;
 }
 main .menu aside p {
+  margin-bottom: 10PX;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -424,12 +429,14 @@ main .menu h1 {
   color: #ffffff;
 }
 main .menu section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   float: right;
-  margin: 82px 44px;
+  margin: 82px 12px;
   border-radius: 4px;
   height: 100%;
   max-height: 200px;
-  padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -437,6 +444,26 @@ main .menu section {
   position: sticky;
   top: 32px;
   color: #ffffff;
+}
+main .menu section p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+main .menu section img {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.25s ease 0s;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-mask-image: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.384) 50%, rgba(0, 0, 0, 0) 100%);
+          mask-image: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.384) 50%, rgba(0, 0, 0, 0) 100%);
 }
 @media (max-width: 900px) {
   main .menu section {
