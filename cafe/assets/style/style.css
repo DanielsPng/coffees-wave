@@ -329,7 +329,7 @@ main .menu .cards .item {
   align-items: center;
   text-align: center;
   width: 100%;
-  background: rgba(255, 255, 255, 0.0549019608);
+  background: rgba(255, 255, 255, 0.2588235294);
   border-radius: 4px;
   padding: 1rem;
   gap: 2rem;
