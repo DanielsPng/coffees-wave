@@ -319,6 +319,7 @@ main .intro .about p {
 main .intro img {
   position: absolute;
   bottom: 0;
+  margin-bottom: 10px;
   filter: opacity(40%);
   z-index: 3;
 }
