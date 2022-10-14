@@ -324,6 +324,7 @@ main .intro img {
   z-index: 3;
 }
 main .menu {
+  margin-top: 10vh;
   height: 100vh;
   box-sizing: border-box;
 }
