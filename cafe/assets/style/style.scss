@@ -380,6 +380,9 @@ main{
       align-items: flex-start;
       gap: 1rem;
 
+      a{
+        text-decoration: none;
+      }
       .item{
         display: flex;
         flex: 1 1 500px;
@@ -391,6 +394,8 @@ main{
         text-align: center;
         width: 100%;
         background: #ffffff42;
+
+        margin: 5rem 0px 0px 0px;
 
         border-radius: 4px;
         padding: 1rem;
@@ -406,22 +411,12 @@ main{
 
           img{
             width: 100%;
-            max-width: 450px;
+            max-width: 400px;
             height: 100%;
-            max-height: 300px;
-            transform: rotate(-10deg);
+            max-height: 250px;
+            transform: rotate(-2deg);
 
           }
-        }
-
-        @media (min-width: 900px){
-          margin: 5rem 44px 0px 44px;
-
-
-        }
-
-        @media (max-width: 900px){
-          margin: 5rem 5rem 0px 5rem;
         }
         
 
@@ -437,7 +432,7 @@ main{
           transition: all 0.25s ease 0s;
           pointer-events: none;
           user-select: none;
-          filter: drop-shadow(20px 5px 10px #0000006e);
+
 
           @media (max-width: 900px){
             margin-top: -3rem;
@@ -453,9 +448,8 @@ main{
         }
       }
 
-
       @media (max-width: 900px){
-        margin: 20px;
+        margin: 0px 120px;
       }
  
     }
