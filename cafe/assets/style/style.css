@@ -399,7 +399,7 @@ main .menu .cards .item p {
 }
 @media (max-width: 900px) {
   main .menu .cards {
-    margin: 0px 120px;
+    margin: 0px 20px;
   }
 }
 main .menu aside {
