@@ -250,6 +250,7 @@ main .presentation .cards .item1 img {
       -ms-user-select: none;
           user-select: none;
   transform: rotate(10deg);
+  z-index: -1;
 }
 @media (max-width: 900px) {
   main .presentation .cards .item1 img {
@@ -261,6 +262,7 @@ main .presentation .cards .item1 img {
 }
 @media (max-width: 900px) {
   main .presentation .cards .item1 {
+    margin-top: 40px;
     position: absolute;
   }
 }
