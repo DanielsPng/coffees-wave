@@ -9,6 +9,7 @@ body {
   background-color: rgb(0, 0, 0);
   height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 header {
@@ -198,6 +199,9 @@ main .bg {
 }
 main .presentation {
   margin: 10vh 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .presentation button {
   background-image: none;
@@ -237,10 +241,11 @@ main .presentation .cards .item1 {
   transition: all 0.25s ease 0s;
 }
 main .presentation .cards .item1 img {
+  position: absolute;
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
   height: 100%;
-  max-height: 650px;
+  max-height: 800px;
   -o-object-fit: contain;
      object-fit: contain;
   transition: all 0.25s ease 0s;
@@ -251,6 +256,7 @@ main .presentation .cards .item1 img {
           user-select: none;
   transform: rotate(10deg);
   z-index: -1;
+  bottom: -50vh;
 }
 @media (max-width: 900px) {
   main .presentation .cards .item1 img {
@@ -258,12 +264,7 @@ main .presentation .cards .item1 img {
     max-width: 900px;
     height: 100%;
     max-height: 850px;
-  }
-}
-@media (max-width: 900px) {
-  main .presentation .cards .item1 {
-    margin-top: 40px;
-    position: absolute;
+    bottom: 2;
   }
 }
 main .presentation .cards .item2 {
